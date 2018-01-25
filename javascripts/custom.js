@@ -161,7 +161,7 @@
         var sW = $slider.width(); 
         var homeSlider = $("#homeSlider").glide({
             type: "slideshow",
-            autoplay: 4000,
+            autoplay: 400000,
             hoverpause: true,
             afterInit: function() {
                 drawLayout();
@@ -184,12 +184,12 @@
                 var h = $(el).height();
                 $(el).css({"top": (sH - h)/2 + "px"});
             });
-            $slider.find(".glide__slide img").each(function(i, img) {
-                 var imgW = $(img).width();
-                 var imgH = $(img).height();
-                 $(img).css((imgW > width) ? {"width": "auto", "margin-left": -((imgW-width)/2) + "px"} : {"width": width, "margin-left":0});
-                 $(img).css((imgH > sH) ? {"margin-top": -((imgH-sH)/2) + "px"} : {"margin-top": 0});
-            });
+            // $slider.find(".glide__slide img").each(function(i, img) {
+            //      var imgW = $(img).width();
+            //      var imgH = $(img).height();
+            //      $(img).css((imgW > width) ? {"width": "auto", "margin-left": -((imgW-width)/2) + "px"} : {"width": width, "margin-left":0});
+            //      $(img).css((imgH > sH) ? {"margin-top": -((imgH-sH)/2) + "px"} : {"margin-top": 0});
+            // });
         }
         $win.on("resize", drawLayout);
     }
@@ -223,7 +223,7 @@
             $clients.owlCarousel({
                 dots: true,
                 nav: false,
-                autoplay: true,
+                autoplay: false, //// modified
                 loop:true,
                 autoplaySpeed: 1000,
                 lazyLoad:true,

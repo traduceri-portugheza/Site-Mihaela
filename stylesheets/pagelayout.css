@@ -1325,6 +1325,16 @@ button::-moz-focus-inner {
 	bottom: 0;
 	background: rgba(11, 25, 45, 0.4);
 }
+#homeSlider .glide__slide .glide__slide__img--one img {
+	width: 1530px;
+	margin-left: -70px;
+	margin-top: -100px;
+}
+#homeSlider .glide__slide .glide__slide__img--two img {
+	width: 1530px;
+	margin-left: -70px;
+	margin-top: -100px;
+}
 .homeSlideshow.agencyStyle .description {
 	margin-right: 0;
 	text-align: center;
@@ -1350,7 +1360,7 @@ button::-moz-focus-inner {
 	left:0;
 	right:0;
 	bottom:0;
-	margin:auto;
+	/*margin:auto;*/
 }
 .sliderContactInfo {
 	height: 60px;
